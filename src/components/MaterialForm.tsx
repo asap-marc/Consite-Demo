@@ -179,8 +179,8 @@ export default function MaterialForm({ onMaterialLogSubmit, initialData, onSave,
                 </label>
                 <SearchableSelect
                     options={unitOfMeasureOptions}
-                    value={unitOfMeasure}
-                    onChange={setUnitOfMeasure}
+                    value={unitOfMeasure ?? null}
+                    onChange={(v) => setUnitOfMeasure(v)}
                     placeholder="Select Unit"
                 />
             </div>

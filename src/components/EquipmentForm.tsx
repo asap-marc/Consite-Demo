@@ -134,7 +134,7 @@ export default function EquipmentForm({ onEquipmentLogSubmit, initialData, onSav
                 onChange={(e) => setRunHours(e.target.value)}
                 className="mt-1 block w-full border-gray-300 shadow-sm rounded-md"
                 inputMode="decimal"
-                step="0.01"
+                step="0.25"
               />
             </div>
             <p className="md:col-span-2 text-sm text-gray-500">You can fill in one or both.</p>

@@ -36,7 +36,7 @@ export default function RootLayout({
           <div className="flex items-center space-x-4">
             <div className="text-right">
                 <span className="font-normal text-neutral-800">aleph</span>
-                <span className="text-xs text-neutral-500">{" { science | growth }"}</span>
+                <span className="text-xs text-neutral-500">{" { automated  construction }"}</span>
             </div>
             <span className="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-1 rounded-full">
                 Sage plug-in
@@ -48,7 +48,7 @@ export default function RootLayout({
           <main className="flex-grow container mx-auto p-4">{children}</main>
         </AppProvider>
         <footer className="p-4 text-center text-xs text-neutral-500 flex-shrink-0">
-          <p>© 2025 Aleph — available for licensing</p>
+          <p>© 2025 aleph — available for licensing</p>
         </footer>
       </body>
     </html>

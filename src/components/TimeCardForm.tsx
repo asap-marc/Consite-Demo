@@ -138,7 +138,7 @@ export default function TimeCardForm({ onTimeCardSubmit, initialData, onSave, on
                 onChange={(e) => setRegularHours(e.target.value)}
                 className="mt-1 block w-full border-gray-300 shadow-sm rounded-md"
                 inputMode="decimal"
-                step="0.01"
+                step="0.25"
               />
             </div>
             <div>
@@ -152,7 +152,7 @@ export default function TimeCardForm({ onTimeCardSubmit, initialData, onSave, on
                 onChange={(e) => setOvertimeHours(e.target.value)}
                 className="mt-1 block w-full border-gray-300 shadow-sm rounded-md"
                 inputMode="decimal"
-                step="0.01"
+                step="0.25"
               />
             </div>
             <div className="md:col-span-2">

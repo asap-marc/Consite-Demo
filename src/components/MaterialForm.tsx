@@ -47,7 +47,7 @@ export default function MaterialForm({ onMaterialLogSubmit, initialData, onSave,
   const [subcategory, setSubcategory] = useState<{ value: string; label: string } | null>(null);
   const [subcategoryOptions, setSubcategoryOptions] = useState<{ value: string; label: string }[]>([]);
   const [supplier, setSupplier] = useState<{ value: string; label: string } | null>(null);
-  const [unitOfMeasure, setUnitOfMeasure] = useState<{ value: 'tonnes' | 'cubic yards'; label: string } | null>(null);
+  const [unitOfMeasure, setUnitOfMeasure] = useState<{ value: string; label: string } | null>(null);
   const [quantity, setQuantity] = useState<number | string>('');
   const [notes, setNotes] = useState('');
   const [notification, setNotification] = useState<{ message: string, type: 'success' | 'error' } | null>(null);
@@ -94,7 +94,7 @@ export default function MaterialForm({ onMaterialLogSubmit, initialData, onSave,
         category: category.value,
         subcategory: subcategory.value,
         supplier: supplier.value,
-        unitOfMeasure: unitOfMeasure.value,
+        unitOfMeasure: unitOfMeasure!.value as 'tonnes' | 'cubic yards',
         quantity: Number(quantity),
         notes,
     };

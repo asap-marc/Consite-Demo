@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // remove output: 'export' so Vercel runs it as a normal Next app
 };
 
 export default nextConfig;
